@@ -93,3 +93,10 @@ const add_people = (name, age, email) => {
 };
 
 
+async function loadUsers() {
+    const users = await fetch("https://jsonplaceholder.typicode.com/users");
+    let user_data =  await users.json();
+    console.log(user_data);
+
+
+}
